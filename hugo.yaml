@@ -1,0 +1,95 @@
+title: Vertex
+baseURL: https://f1shl3gs.github.io/
+languageCode: en-us
+theme: hextra
+
+menu:
+  main:
+    - name: Docs
+      identifier: docs
+      pageRef: /docs
+      weight: 2
+    - name: Blog
+      identifier: blog
+      pageRef: /blog
+      weight: 1
+    - name: GitHub
+      weight: 3
+      url: "https://github.com/f1shl3gs/vertex"
+      params:
+        icon: github
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: theme
+      params:
+        type: theme-toggle
+    - name: language
+      params:
+        type: language-switch
+
+languages:
+  en:
+    languageName: English
+  zh-cn:
+    languageName: 简体中文
+    languageCode: zh-CN
+
+minify:
+  minifyOutput: true
+
+enableInlineShortcodes: true
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+        enable: true
+
+params:
+  page:
+    width: full
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+      # Pagination
+      pagerSize: 20
+    article:
+      displayPagination: true
+
+  doc:
+    list:
+      sortBy: title
+
+  toc:
+    displayTags: true
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
