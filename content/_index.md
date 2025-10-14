@@ -25,23 +25,22 @@ layout: hextra-home
 
 {{< hextra/feature-card
     title="Fast and safe"
-    subtitle="Rust is blazingly fast and memory-efficient, with no runtime or garbage collector"
+    subtitle="Built in Rust, blazingly fast and memory-efficient, with no runtime or garbage collector"
+>}}
+
+{{< hextra/feature-card
+title="Easy to configure"
+subtitle="A simple, composable format enables you to build flexible pipelines"
 >}}
 
 {{< hextra/feature-card
     title="Vertex is All You Need"
-    subtitle="Simple and easy to use, yet powerful and feature-rich"
+    subtitle="Vertex strives to be the only tool you need to get observability data"
 >}}
 
 {{< hextra/feature-card
-    title="Build and Host for Free"
-    subtitle="Build with GitHub Actions, and host for free on GitHub Pages. Alternatively it can be hosted on any static hosting service."
->}}
-
-{{< hextra/feature-card
-    title="And Much More..."
-    icon="sparkles"
-    subtitle="Audit, Bind, Consul, Clickhouse, Consul, Dnsmasq, DNStap, Docker, DPDK, Elasticsearch, Jaeger, System JournalD,  and more..."
+    title="Highly flexible topologies"
+    subtitle="A wide range of extensions, sources, transforms, and sinks"
 >}}
 
 {{< /hextra/feature-grid >}}
