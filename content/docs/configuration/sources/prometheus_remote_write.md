@@ -4,6 +4,10 @@ title: prometheus_remote_write
 
 {{< badge metrics >}}&nbsp;
 
+{{< callout type="info" >}}
+[Prometheus remote write v2](https://prometheus.io/docs/specs/prw/remote_write_spec_2_0/) is nice, but vertex does not support it yet.
+{{< /callout >}}
+
 Start a HTTP server and receive Protobuf encoded metrics.
 
 ### Example
