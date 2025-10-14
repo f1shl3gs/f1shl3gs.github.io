@@ -16,8 +16,8 @@ lightweight implementation.
 # client connects to initially to bootstrap itself.
 #
 # Required
-bootstrap_brokers: 
-- 10.14.22.123:9092
+bootstrap_brokers:
+  - 10.14.22.123:9092
 
 # The Kafka topics names to read events from.
 # 
@@ -51,7 +51,7 @@ commit_interval: 5s
 # Tell Kafka to wait until it has enough data to send before responding to the consumer.
 #
 # Optional
-fetch_wait_max: {"nanos":200000000,"secs":0}
+fetch_wait_max: 200ms
 
 # The log field name to use for the Kafka message key.
 #
@@ -86,7 +86,7 @@ framing: bytes
 # Configuration for building a `Deserializer`.
 #
 # Optional
-decoding: 
+decoding:
   codec: json
 
   # Determines whether or not to replace invalid UTF-8 sequences instead of failing.
