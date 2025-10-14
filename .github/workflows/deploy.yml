@@ -27,6 +27,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      HUGO_VERSION: 0.151.0
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
