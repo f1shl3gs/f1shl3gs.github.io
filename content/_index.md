@@ -43,4 +43,14 @@ subtitle="A simple, composable format enables you to build flexible pipelines"
     subtitle="A wide range of extensions, sources, transforms, and sinks"
 >}}
 
+{{< hextra/feature-card
+title="Unified"
+subtitle="Vertex supports metrics, logs and traces, making it easy to collect and process all your data"
+>}}
+
+{{< hextra/feature-card
+    title="Single binary"
+    subtitle="Built to a single binary, no dependencies, no runtime, just download and running"
+>}}
+
 {{< /hextra/feature-grid >}}
