@@ -1,6 +1,6 @@
 ---
 title: Monitoring
-weight: 4
+weight: 5
 ---
 
 ## Logs
