@@ -11,9 +11,7 @@ user to debug
 
 ### Example
 ```yaml
-command: ""
-
-args: []
+command: []
 
 working_directory: null
 
