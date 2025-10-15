@@ -4,6 +4,8 @@ title: dnstap
 
 {{< badge logs >}}&nbsp;
 
+Collect DNS logs from dnstap-compatible servers.
+
 ### Example
 ```yaml
 # Maximum DNSTAP frame length that the source accepts.

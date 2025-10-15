@@ -4,6 +4,8 @@ title: exec
 
 {{< badge logs >}}&nbsp;
 
+Collect output from a process running on the host.
+
 ## Scheduled
 Running the command every `interval`, and captures the stdout and/or stderr. Vertex
 will wait the command exit and run that command at next tick.
