@@ -2,6 +2,8 @@
 title: Podman metrics
 date: 2025-10-12
 excludeSearch: true
+tags:
+  - Container
 ---
 
 ![verses](verses.png)
