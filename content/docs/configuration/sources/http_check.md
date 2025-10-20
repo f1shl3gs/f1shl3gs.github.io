@@ -4,14 +4,14 @@ title: http_check
 
 {{< badge metrics >}}&nbsp;
 
+This source can be used for synthetic checks against HTTP endpoints. 
+This source will make a request to the specified `endpoint` using 
+the configured `method`. This scraper generates metrics with a label
+for each HTTP response status class with a value of `1` if the status
+code matches the class.
+
 ### Example
 ```yaml
-# The HTTP Check source can be used for synthetic checks against HTTP
-# endpoints. This source will make a request to the specified `endpoint`
-# using the configured `method`. This scraper generates a metric with
-# a label for each HTTP response status class with a value of `1` if
-# the status code matches the class.
-
 # Targets to probe
 #
 # Required
