@@ -9,7 +9,7 @@ title: zookeeper
 # The endpoints to connect to.
 #
 # Required
-target: 127.0.0.1:8080
+endpoints: []
 
 # Duration between each scrape.
 #
