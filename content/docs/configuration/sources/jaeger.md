@@ -31,7 +31,7 @@ or retrieving trace data.
 #
 # Optional
 thrift_http:
-  endpoint: 0.0.0.0:14268
+  listen: 0.0.0.0:14268
 
   # Configures the TLS options for incoming/outgoing connections.
   #
