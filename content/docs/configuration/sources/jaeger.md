@@ -30,13 +30,13 @@ or retrieving trace data.
 # See https://www.jaegertracing.io/docs/1.31/apis/#thrift-over-http-stable
 #
 # Optional
-thrift_http: 
+thrift_http:
   endpoint: 0.0.0.0:14268
 
   # Configures the TLS options for incoming/outgoing connections.
   #
   # Optional
-  tls: 
+  tls:
     # Absolute path to an additional CA certificate file, in DER or PEM
     # format(X.509), or an inline CA certificate in PEM format.
     #
@@ -95,8 +95,8 @@ thrift_http:
 # See https://www.jaegertracing.io/docs/1.31/apis/#thrift-over-udp-stable
 #
 # Optional
-thrift_compact: 
-  endpoint: 0.0.0.0:6831
+thrift_compact:
+  listen: 0.0.0.0:6831
 
   max_packet_size: 65000
 
@@ -108,8 +108,8 @@ thrift_compact:
 # See https://www.jaegertracing.io/docs/1.31/apis/#thrift-over-udp-stable
 #
 # Optional
-thrift_binary: 
-  endpoint: 0.0.0.0:6832
+thrift_binary:
+  listen: 0.0.0.0:6832
 
   max_packet_size: 65000
 
@@ -120,6 +120,6 @@ thrift_binary:
 # See https://www.jaegertracing.io/docs/1.31/apis/#protobuf-via-grpc-stable
 #
 # Optional
-grpc: 
-  endpoint: 0.0.0.0:14250
+grpc:
+  listen: 0.0.0.0:14250
 ```
