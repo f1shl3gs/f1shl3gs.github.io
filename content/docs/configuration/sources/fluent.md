@@ -8,12 +8,15 @@ Collecting logs from a Fluentd or Fluent Bit agent with forward protocol.
 
 ### Example
 ```yaml
-address: 127.0.0.1:24224
+# The socket address to listen for connections
+#
+# Optional
+listen: 127.0.0.1:24224
 
 # Configures the TLS options for incoming/outgoing connections.
 #
 # Optional
-tls: 
+tls:
   # Absolute path to an additional CA certificate file, in DER or PEM
   # format(X.509), or an inline CA certificate in PEM format.
   #
@@ -78,7 +81,7 @@ connection_limit: null
 # https://github.com/tokio-rs/tokio/blob/tokio-0.2.22/tokio/src/net/tcp/stream.rs#L516-L537
 #
 # Optional
-keepalive: 
+keepalive:
   # The time a connection needs to be idle before sending TCP
   # keepalive probes.
   #
