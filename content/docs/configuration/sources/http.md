@@ -10,13 +10,13 @@ Starting an HTTP server and parsing request body to events.
 ```yaml
 # The socket address to listen for connections on
 #
-# Optional
+# Required
 listen: 127.0.0.1:8080
 
 # Configures the TLS options for incoming/outgoing connections.
 #
 # Optional
-tls: 
+tls:
   # Absolute path to an additional CA certificate file, in DER or PEM
   # format(X.509), or an inline CA certificate in PEM format.
   #
@@ -70,7 +70,10 @@ tls:
   # Optional
   verify_hostname: true
 
-auth: 
+# HTTP basic auth
+#
+# Optional
+auth:
   # The basic authentication username.
   #
   # Required
@@ -99,7 +102,7 @@ framing: bytes
 # Configuration for building a `Deserializer`.
 #
 # Optional
-decoding: 
+decoding:
   codec: json
 
   # Determines whether or not to replace invalid UTF-8 sequences instead of failing.

@@ -6,20 +6,17 @@ title: http
 
 ### Example
 ```yaml
-# HTTP method
-#
-# Optional
-method: POST
-
 # The full URI to make HTTP requests to.
 #
 # Required
 endpoint: http://example.com/some/resource
 
+method: OPTIONS
+
 # Http auth
 #
 # Optional
-auth: 
+auth:
   strategy: basic
 
   # The basic authentication username.
@@ -35,7 +32,7 @@ auth:
 # Configures the TLS options for incoming/outgoing connections.
 #
 # Optional
-tls: 
+tls:
   # Absolute path to an additional CA certificate file, in DER or PEM
   # format(X.509), or an inline CA certificate in PEM format.
   #
@@ -94,7 +91,7 @@ compression: none
 # Configures the sink batching behavior.
 #
 # Optional
-batch: 
+batch:
   # The maximum size of a batch that is processed by a sink.
   # 
   # This is based on the uncompressed size of the batched events, before they
@@ -118,7 +115,7 @@ batch:
 # Various settings can be configured, such as concurrency and rate limits, timeouts, etc.
 #
 # Optional
-request: 
+request:
   concurrency: none
 
   # The time a request can take before being aborted.
@@ -165,22 +162,22 @@ request:
   # balances found between competing outcomes.
   #
   # Optional
-  adaptive_concurrency: 
+  adaptive_concurrency:
     # This value maintained high concurrency without holding it too high under
     # adverse conditions.
     #
-    # Optional
+    # Required
     decrease_ratio: 1.0
 
     # This value achieved the best balance between quick response and stability
     #
-    # Optional
+    # Required
     ewma_alpha: 1.0
 
     # This value avoided changing concurrency too aggressively when there is
     # fluctuation in the RTT measurements.
     #
-    # Optional
+    # Required
     rtt_deviation_scale: 1.0
 
   # Headers that will be added to the request.
@@ -190,8 +187,8 @@ request:
 
 # Encoding configuration
 #
-# Optional
-encoding: 
+# Required
+encoding:
   codec: json
 
   # Whether to use pretty JSON formatting.
