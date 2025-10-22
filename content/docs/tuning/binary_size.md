@@ -33,7 +33,7 @@ ll target/release/vertex
 
 {{% /steps %}}
 
-### `Strip` Symbols from Binary
+## `Strip` Symbols from Binary
 By default, on Linux and macOS, symbol information is included in the compiled `.elf` file.
 This information is not needed to properly execute the binary.
 
@@ -48,9 +48,9 @@ Or, modify the `Cargo.toml`
 strip = true
 ```
 
-### Reduce Parallel Code Generation units
-Cargo will use as many as possible(<= 16) for code generating, This improves compile times,
-but prevents some optimizations. 
+## Reduce Parallel Code Generation units
+Cargo will use as many as possible(<= 16) for code generating, This increase compile times
+and more `inline` optimization.
 
 Set this to `1` in `Cargo.toml` to allow for maximum size reduction optimization 
 ```toml {filename="Cargo.yaml"}
