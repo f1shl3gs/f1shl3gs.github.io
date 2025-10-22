@@ -8,15 +8,15 @@ GRPC check the grpc service and produce metrics, see [health checking](https://g
 
 ### Example
 ```yaml
-# The service name to query for health status.
-#
-# Required
-service: grpc.health.v1.Health
-
 # Endpoint for gRPC service.
 #
 # Required
 targets: []
+
+# The service name to query for health status.
+#
+# Required
+service: grpc.health.v1.Health
 
 # This sources collects metrics on an interval.
 #
