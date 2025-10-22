@@ -8,19 +8,19 @@ title: prometheus_remote_write
 [Prometheus remote write v2](https://prometheus.io/docs/specs/prw/remote_write_spec_2_0/) is nice, but vertex does not support it yet.
 {{< /callout >}}
 
-Start a HTTP server and receive Protobuf encoded metrics.
+Start an HTTP server and receive Protobuf encoded metrics.
 
 ### Example
 ```yaml
 # The address to accept connections on. The address must include a port
 #
 # Required
-address: 127.0.0.1:8080
+listen: 127.0.0.1:8080
 
 # HTTP Server TLS config
 #
 # Optional
-tls: 
+tls:
   # Absolute path to an additional CA certificate file, in DER or PEM
   # format(X.509), or an inline CA certificate in PEM format.
   #
@@ -77,7 +77,7 @@ tls:
 # HTTP basic auth
 #
 # Optional
-auth: 
+auth:
   # The basic authentication username.
   #
   # Required
