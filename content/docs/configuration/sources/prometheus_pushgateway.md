@@ -6,17 +6,15 @@ title: prometheus_pushgateway
 
 ### Example
 ```yaml
-# Configuration for the `prometheus_pushgateway` source.
-
 # The address to accept connections on.
 #
 # Optional
-address: 127.0.0.1:8080
+listen: 0.0.0.0:9091
 
 # Configures the TLS options for incoming/outgoing connections.
 #
 # Optional
-tls: 
+tls:
   # Absolute path to an additional CA certificate file, in DER or PEM
   # format(X.509), or an inline CA certificate in PEM format.
   #
@@ -70,10 +68,10 @@ tls:
   # Optional
   verify_hostname: true
 
-# HTTP Basic Auth
-# 
+# HTTP basic auth
+#
 # Optional
-auth: 
+auth:
   # The basic authentication username.
   #
   # Required
