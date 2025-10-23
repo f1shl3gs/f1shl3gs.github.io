@@ -13,7 +13,7 @@ protocol: udp
 # The address to connect to. The address must include a port.
 #
 # Required
-address: 127.0.0.1:6832
+endpoint: ""
 
 # The size of the socket's send buffer.
 # 
@@ -187,5 +187,4 @@ tls:
   #
   # Optional
   verify_hostname: true
-
 ```
