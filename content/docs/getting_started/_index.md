@@ -68,3 +68,14 @@ node_btrfs_commit_seconds_total{uuid="abdc1472-719c-491c-9962-6b2ff956bc2b"} 0
 ```
 
 {{% /steps %}}
+
+## Next
+[_index.md](../_index.md)
+Explore the following sections to getting everything done.
+
+{{< cards >}}
+  {{< card link="../configuration/extensions" title="Extensions" >}}
+  {{< card link="../configuration/sources" title="Sources" >}}
+  {{< card link="../configuration/transforms" title="Transforms" >}}
+  {{< card link="../configuration/sinks" title="Sinks" >}}
+{{< /cards >}}
