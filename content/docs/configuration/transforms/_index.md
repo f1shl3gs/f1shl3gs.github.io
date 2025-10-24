@@ -1,5 +1,8 @@
 ---
 title: Transforms
-weight: 4
+weight: 6
 ---
 
+{{< cards >}}
+  {{< components path="content/docs/configuration/transforms" >}}
+{{< /cards >}}

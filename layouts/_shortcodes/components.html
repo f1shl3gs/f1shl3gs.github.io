@@ -1,0 +1,16 @@
+{{- /*
+
+@param {string} path to the components directory.
+
+*/ -}}
+
+{{ $path := .Get "path" }}
+
+{{ range where (readDir $path) ".Name" "ne" "_index.md" }}
+  {{ $name := strings.TrimSuffix ".md" .Name }}
+
+  {{ partial "shortcodes/card" (dict
+    "title" $name
+    "link"  $name
+  ) }}
+{{ end }}

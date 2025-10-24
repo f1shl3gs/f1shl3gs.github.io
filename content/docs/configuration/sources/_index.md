@@ -1,4 +1,8 @@
 ---
 title: Sources
-weight: 3
+weight: 5
 ---
+
+{{< cards >}}
+{{< components path="content/docs/configuration/sources" >}}
+{{< /cards >}}

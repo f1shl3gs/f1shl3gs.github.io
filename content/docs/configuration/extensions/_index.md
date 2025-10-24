@@ -1,5 +1,8 @@
 ---
 title: Extensions
-weight: 2
+weight: 4
 ---
 
+{{< cards >}}
+  {{< components path="content/docs/configuration/extensions" >}}
+{{< /cards >}}

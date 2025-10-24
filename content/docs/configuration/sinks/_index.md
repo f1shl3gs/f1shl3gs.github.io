@@ -1,4 +1,8 @@
 ---
 title: Sinks
-weight: 5
+weight: 7
 ---
+
+{{< cards >}}
+  {{< components path="content/docs/configuration/sinks" >}}
+{{< /cards >}}
