@@ -14,12 +14,6 @@ There are a few basic requirements for HTTP service discovery:
 - Authentication if required can be Basic, using the Authorization header, or OAuth 2.0. You would typically not need authentication if the endpoint is in your internal network, or part of your applications.
 - If there are no endpoints, the endpoint should return an empty list.
 
-## TODO
-
-Something like this kind of HTTP endpoint probably provided already, but the response
-content is not what we want. So we can transform the response to the Endpoints, that's
-what we want.
-
 ### Example
 ```yaml
 # HTTP endpoint to fetch endpoints
