@@ -1,6 +1,6 @@
 ---
 title: Service Discovery
-weight: 4
+weight: 5
 ---
 
 Service discovery (SD) is a mechanism by which the vertex can discover monitorable endpoints automatically.
