@@ -9,7 +9,7 @@ title: prometheus_exporter
 # The address the prometheus server will listen at
 #
 # Optional
-endpoint: 0.0.0.0:9100
+listen: 0.0.0.0:9100
 
 # Configures the TLS options for incoming/outgoing connections.
 #
