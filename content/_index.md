@@ -34,7 +34,7 @@ subtitle="A simple, composable format enables you to build flexible pipelines"
 >}}
 
 {{< hextra/feature-card
-    title="Vertex is All You Need"
+    title="All You Need"
     subtitle="Vertex strives to be the only tool you need to get observability data"
 >}}
 

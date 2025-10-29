@@ -16,7 +16,7 @@
   {{ $linkClass = "hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:hover:shadow-lg hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700" }}
 {{- end -}}
 
-{{- $external := strings.HasPrefix $link "http" -}}
+{{- $external := strings.HasPrefix $link "http://" -}}
 {{- $href := cond (strings.HasPrefix $link "/") ($link | relURL) $link -}}
 
 

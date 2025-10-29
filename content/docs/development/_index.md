@@ -3,4 +3,8 @@ title: Development
 weight: 7
 ---
 
-TODO
+## Pages
+
+{{< cards >}}
+  {{< components path="content/docs/development" >}}
+{{< /cards >}}
