@@ -7,6 +7,5 @@ live data for debugging different components that were properly instrumented for
 
 ### Example
 ```yaml
-endpoint: 0.0.0.0:56888
+listen: 0.0.0.0:56888
 ```
-
