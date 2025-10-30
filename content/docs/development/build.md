@@ -12,7 +12,9 @@ title: Build
 ```console
 make
 ```
+
 or
+
 ```console
 cargo build --release
 ```

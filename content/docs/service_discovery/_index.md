@@ -5,7 +5,7 @@ weight: 5
 
 Service discovery (SD) is a mechanism by which the vertex can discover monitorable endpoints automatically.
 
-### Available Mechanisms
+### Available Extensions
 - [consul](/docs/configuration/extensions/consul_observer)
 - [dns](/docs/configuration/extensions/consul_observer)
 - [exec](/docs/configuration/extensions/exec_observer)
@@ -13,7 +13,7 @@ Service discovery (SD) is a mechanism by which the vertex can discover monitorab
 - [kubernetes](/docs/configuration/extensions/kubernetes_observer)
 - [port](/docs/configuration/extensions/port_observer)
 
-All service discovery extension provide a list of `Endpoint`s, Endpoint looks like below: 
+All service observer extension provide a list of `Endpoint`s, Endpoint looks like below: 
 ```yaml
 # ID uniquely identifies this endpoint
 id: "123456789",
@@ -31,6 +31,9 @@ details:
   properties:
     foo: bar
 ```
+
+and [multiplier](/docs/configuration/sources/multiplier) will expand and interpolate those endpoints
+to sub sources.
 
 ### Configuring Service Discovery
 
