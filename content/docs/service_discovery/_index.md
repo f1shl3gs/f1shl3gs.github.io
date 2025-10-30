@@ -5,7 +5,7 @@ weight: 5
 
 Service discovery (SD) is a mechanism by which the vertex can discover monitorable endpoints automatically.
 
-### Predefined Mechanisms
+### Available Mechanisms
 - [consul](/docs/configuration/extensions/consul_observer)
 - [dns](/docs/configuration/extensions/consul_observer)
 - [exec](/docs/configuration/extensions/exec_observer)
