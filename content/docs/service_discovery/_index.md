@@ -36,28 +36,57 @@ details:
 
 ```yaml
 extensions:
-  ports: 
+  ports:
     type: port_observer
-    names:
-      - foo.redis.svc
+    interval: 3s
+  tap:
+    type: remote_tap
+
 sources:
-  http_check:
+  http:
     type: multiplier
     observer: ports
     templates:
-      # rule field is an VTL script to filter endpoints out
-      - rule: details.port == 9100
-        config: 
+      - rule: details.port == 9100 # prometheus_exporter sink
+        config:
           type: http_check
           targets:
             - http://${{ target }}
+          interval: 1s
 
 sinks:
   prom:
     type: prometheus_exporter
     inputs:
-      - http_check
+      - http
 ```
 
 ### Troubleshooting
-TODO
+
+curl or [visit](http://127.0.0.1:11000/observers) the endpoint configured in the [remote_tap](/docs/configuration/extensions/remote_tap) extension.
+
+```console
+curl http://127.0.0.1:11000/observers | jq .
+```
+
+you can get something like
+
+```json
+{
+  "ports": [
+    {
+      "id": "tcp:127.0.0.1:33331@3577",
+      "type": "port",
+      "target": "127.0.0.1:33331",
+      "details": {
+        "cmdline": "/usr/bin/xxxx",
+        "is_ipv6": false,
+        "name": "xxxx",
+        "pid": 3577,
+        "port": 3333,
+        "protocol": "tcp"
+      }
+    }
+  ]
+}
+```
