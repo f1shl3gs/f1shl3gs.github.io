@@ -82,6 +82,9 @@ machine metrics and expose those metrics with prometheus_exporter sink.
   {{< /tab >}}
 {{< /tabs >}}
 
+Note that sources, transforms and sinks are defined as a map, and the key is the component name, the value
+of the key are a map with a must contained field `type` which identify the component type, e.g. node, docker...
+
 ### YAML
 [multiple documents](https://yaml.org/spec/1.2.2/#22-structures) is supported.
 
