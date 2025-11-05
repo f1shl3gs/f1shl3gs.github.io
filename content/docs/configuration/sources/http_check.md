@@ -106,3 +106,29 @@ timeout: 5s
 # Optional
 interval: 15s
 ```
+
+## Output
+```text
+# HELP http_duration_seconds Duration of http request by phase
+# TYPE http_duration_seconds gauge
+http_duration_seconds{instance="www.aliyun.com",phase="connect"} 0.008719786
+http_duration_seconds{instance="www.aliyun.com",phase="processing"} 0.052432433
+http_duration_seconds{instance="www.aliyun.com",phase="resolve"} 0.005326997
+http_duration_seconds{instance="www.aliyun.com",phase="tls"} 0.024979751
+http_duration_seconds{instance="www.aliyun.com",phase="transfer"} 0.028581304
+# HELP http_last_modified_timestamp_seconds Returns the Last-Modified HTTP response header in unixtime
+# TYPE http_last_modified_timestamp_seconds gauge
+http_last_modified_timestamp_seconds{instance="www.aliyun.com"} 1762250059
+# HELP http_redirects The number of redirects
+# TYPE http_redirects gauge
+http_redirects{instance="www.aliyun.com"} 0
+# HELP http_status_code Response HTTP status code
+# TYPE http_status_code gauge
+http_status_code{instance="www.aliyun.com"} 200
+# HELP http_up Whether the target is success
+# TYPE http_up gauge
+http_up{instance="www.aliyun.com"} 1
+# HELP http_version Returns the version of HTTP of the probe response
+# TYPE http_version gauge
+http_version{instance="www.aliyun.com"} 1.1
+```
