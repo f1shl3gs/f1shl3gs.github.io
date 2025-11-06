@@ -26,5 +26,5 @@ sources:
     - http://127.0.0.1
   auth:
     strategy: bearer
-    token: @[keyring:token]
+    token: SECRET[keyring.key]
 ```
