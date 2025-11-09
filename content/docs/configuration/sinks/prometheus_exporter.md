@@ -11,10 +11,26 @@ title: prometheus_exporter
 # Optional
 listen: 0.0.0.0:9100
 
+# The authentication strategy for http request/response
+#
+# Optional
+auth:
+  strategy: basic
+
+  # The basic authentication username.
+  #
+  # Required
+  user: ""
+
+  # The basic authentication password.
+  #
+  # Required
+  password: ""
+
 # Configures the TLS options for incoming/outgoing connections.
 #
 # Optional
-tls: 
+tls:
   # Absolute path to an additional CA certificate file, in DER or PEM
   # format(X.509), or an inline CA certificate in PEM format.
   #
