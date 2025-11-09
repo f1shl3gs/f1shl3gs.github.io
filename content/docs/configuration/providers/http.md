@@ -9,49 +9,23 @@ Vertex will fetch configs periodically, and reload if the response content's has
 # The URL to download config
 #
 # Required
-endpoint: http://example.com/config
+endpoint: http://example.com/some/resource
 
-# The interval between fetch config.
+# The authentication strategy for http request/response
 #
 # Optional
-interval: 1m
+auth:
+  strategy: basic
 
-# HTTP headers to add to the request.
-#
-# Optional
-headers: {}
+  # The basic authentication username.
+  #
+  # Required
+  user: ""
 
-# Configures an HTTP/HTTPS proxy for Vertex to use. By default, the globally
-# configured proxy is used.
-#
-# Optional
-proxy:
-  # Enable proxy or not
+  # The basic authentication password.
   #
-  # Optional
-  enabled: true
-  
-  # The URL to proxy HTTP requests through.
-  #
-  # Optional
-  http: null
-  
-  # The URL to proxy HTTPS requests through.
-  #
-  # Optional
-  https: null
-
-  # A list of hosts to avoid proxying. Allowed patterns here include:
-  # 
-  # Domain names:     "example.com" matches requests to example.com
-  # Wildcard domains: ".example.com" matches requests to example.com and its
-  # subdomains
-  # IP address:        "127.0.0.1" matches requests to 127.0.0.1
-  # CIDR blocks:       "192.168.0.0./16" matches requests to any IP addresses in this range.
-  # Splat:             "*" matches all hosts
-  #
-  # Optional
-  no_proxy: []
+  # Required
+  password: ""
 
 # Configures the TLS options for incoming/outgoing connections.
 #
@@ -109,4 +83,43 @@ tls:
   #
   # Optional
   verify_hostname: true
+
+# Configures an HTTP/HTTPS proxy for Vertex to use. By default, the globally
+# configured proxy is used.
+#
+# Optional
+proxy:
+  enabled: true
+
+  # The URL to proxy HTTP requests through.
+  #
+  # Optional
+  http: null
+
+  # The URL to proxy HTTPS requests through.
+  #
+  # Optional
+  https: null
+
+  # A list of hosts to avoid proxying. Allowed patterns here include:
+  # 
+  # Domain names:     "example.com" matches requests to example.com
+  # Wildcard domains: ".example.com" matches requests to example.com and its
+  # subdomains
+  # IP address:        "127.0.0.1" matches requests to 127.0.0.1
+  # CIDR blocks:       "192.168.0.0./16" matches requests to any IP addresses in this range.
+  # Splat:             "*" matches all hosts
+  #
+  # Optional
+  no_proxy: []
+
+# HTTP headers to add to the request.
+#
+# Optional
+headers: {}
+
+# The interval between fetch config.
+#
+# Optional
+interval: 1m
 ```
