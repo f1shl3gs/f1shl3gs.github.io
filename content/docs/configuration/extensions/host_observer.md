@@ -1,5 +1,5 @@
 ---
-title: port_observer
+title: host_observer
 ---
 
 {{< callout type="info" >}}
@@ -11,7 +11,7 @@ Scanning TCP/UDP + IPv4/IPv6 listening ports, and get the process information
 ### Endpoint
 ```yaml
 id: tcp:0.0.0.0:9100@689935
-typ: port
+typ: host
 target: 0.0.0.0:9100
 details: 
   cmdline: vertex
