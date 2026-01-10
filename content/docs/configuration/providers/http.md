@@ -11,6 +11,16 @@ Vertex will fetch configs periodically, and reload if the response content's has
 # Required
 endpoint: http://example.com/some/resource
 
+# The interval between fetch config.
+#
+# Optional
+interval: 1m
+
+# Extra HTTP headers to add to request.
+#
+# Optional
+headers: {}
+
 # The authentication strategy for http request/response
 #
 # Optional
@@ -112,14 +122,4 @@ proxy:
   #
   # Optional
   no_proxy: []
-
-# HTTP headers to add to the request.
-#
-# Optional
-headers: {}
-
-# The interval between fetch config.
-#
-# Optional
-interval: 1m
 ```
